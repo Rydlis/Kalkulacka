@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="604.0" maxWidth="325.0" minHeight="604.0" minWidth="325.0" prefHeight="604.0" prefWidth="325.0" style="-fx-background-color: black;" stylesheets="@styly.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="-2.0" layoutY="207.0" prefHeight="398.0" prefWidth="326.0" style="-fx-background-color: #333333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="procento" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleNefunkcniEvent" style="-fx-background-color: transparent;" text="\%" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="MS" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleSaveMemory" style="-fx-background-color: transparent;" text="MS" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="odmocnina" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleOdmocninaEvent" style="-fx-background-color: transparent;" text="√" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="MR" alignment="CENTER" contentDisplay="CENTER" layoutX="97.0" layoutY="12.0" mnemonicParsing="false" onAction="#handlePrintMemory" style="-fx-background-color: transparent;" text="MR" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="MCminus" alignment="CENTER" contentDisplay="CENTER" layoutX="261.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleMemoryMinus" style="-fx-background-color: transparent;" text="MC-" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="zlomek" alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleZlomekEvent" style="-fx-background-color: transparent;" text="1/n" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="MC" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleMemoryClear" style="-fx-background-color: transparent;" text="MC" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="MCplus" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleMemoryPlus" style="-fx-background-color: transparent;" text="MC+" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="vymaz_cele" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleClearEvent" style="-fx-background-color: transparent;" text="CE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="vymaz" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="107.0" mnemonicParsing="false" onAction="#hadleClearDisplay" style="-fx-background-color: transparent;" text="C" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleNefunkcniEvent" style="-fx-background-color: transparent;" text="&lt;-" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="vydel" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleVydelEvent" style="-fx-background-color: transparent;" text="/" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num7" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="7" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num4" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="4" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num1" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="1" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="negace" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleNegaceEvent" style="-fx-background-color: transparent;" text="±" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num8" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="8" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num5" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="5" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num2" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="2" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num0" alignment="CENTER" contentDisplay="CENTER" layoutX="98.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num9" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="9" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num6" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="6" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button" fx:id="num3" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleAddNumber" style="-fx-background-color: transparent;" text="3" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tecka" alignment="CENTER" contentDisplay="CENTER" layoutX="187.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleAddTecka" style="-fx-background-color: transparent;" text="." textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="vynasob" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleVynasobEvent" style="-fx-background-color: transparent;" text="x" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="odecti" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="233.0" mnemonicParsing="false" onAction="#handleOdecistEvent" style="-fx-background-color: transparent;" text="-" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="secti" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleSecistEvent" style="-fx-background-color: transparent;" text="+" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="vypocitej" alignment="CENTER" contentDisplay="CENTER" layoutX="266.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleVypocitejEvent" style="-fx-background-color: transparent;" text="=" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Line endX="325.0" layoutX="101.0" layoutY="302.0" stroke="WHITE" AnchorPane.rightAnchor="0.0" />
+      <TextField fx:id="display" alignment="BOTTOM_RIGHT" layoutY="1.0" prefHeight="205.0" prefWidth="325.0" style="-fx-background-color: transparent; -fx-text-inner-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutX="8.0" layoutY="14.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass=".menu" text="Soubor">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleKonecEvent" text="Ukončit">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="F4" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-text-inner-color: white;" text="Nápověda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleInformaceEvent" text="Informace">
+                     <accelerator>
+                        <KeyCodeCombination alt="ANY" code="F1" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="label" layoutX="258.0" layoutY="136.0" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
